@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Калькулятор с Историями Расчётов</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h2>Нахождение процента от числа</h2>
+        <div class="calculator">
+            <form id="calculatorForm" class="calculator-form">
+                <div class="input-div">
+                    <input type="number" step="0.01" id="num1" class="input-area" placeholder="Процент">
+                    <!-- <select id="operation">
+                        <option value="add">+</option>
+                        <option value="subtract">-</option>
+                        <option value="multiply">*</option>
+                        <option value="divide">/</option>
+                    </select> -->
+                    <span>от</span>
+                    <input type="number" step="0.01" id="num2" class="input-area" placeholder="числа">
+                </div>
+                <div id="result"></div>
+
+                <div class="btn-solve">
+                    <button type="submit">Рассчитать</button>
+                </div>
+            </form>
+        
+
+            <ul id="historyList"></ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
