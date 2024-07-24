@@ -20,31 +20,7 @@ document.getElementById('calculatorForm').addEventListener('submit', function(ev
     }
 
     let result = (num2 * (num1 / 100)).toFixed(2);
-    
-    // switch(operation) {
-    //     case 'add':
-    //         result = num1 + num2;
-    //         break;
-    //     case 'subtract':
-    //         result = num1 - num2;
-    //         break;
-    //     case 'multiply':
-    //         result = num1 * num2;
-    //         break;
-    //     case 'divide':
-    //         if(num2!== 0) {
-    //             result = num1 / num2;
-    //         } else {
-    //             alert("Ошибка: деление на ноль невозможно");
-    //             return;
-    //         }
-    //         break;
-    //     default:
-    //         alert("Выбрана неизвестная операция");
-    //         return;
-    // }
-    
-    // const historyItemText = `${num1} ${operation} ${num2} = ${result}`;
+
     if (validateFlag) {
         const historyItemText = `${num1}% от числа ${num2} = ${result}`;
         addHistoryItem(historyItemText);
